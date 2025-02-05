@@ -1,8 +1,8 @@
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
+    --color-tertiary: #F00;
+    --color-button: #00ad00;
     --color-button-hover: #e55720;
     --color-text: #444444;
     --color-white: #FFFFFF;
@@ -90,6 +90,8 @@ body {
 .button-container {
     width: 300px;
     justify-content: center;
+    gap: 5px;
+    display: flex;
 }
 
 /* Estilos de entrada de texto */
@@ -116,13 +118,15 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-primary);
+    color: #fff;
     border-radius: 0 25px 25px 0;
 }
 
-.button-add:hover {
-    background-color: #a1a1a1;
+.button-remove {
+    background-color: var(--color-tertiary);
+    color: #fff;
+    border-radius: 0 25px 25px 0;
 }
 
 /* Listas */
@@ -132,6 +136,8 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    display: flex;
+    gap: 5px;
 }
 
 .result-list {
@@ -159,4 +165,11 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+li{
+    border-radius: 10px;
+    border: 2px solid #000;
+    padding: 10px;
+    font-size: 20px;
 }
